@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>While Loop</title>
+</head>
+<body>
+    <h1>While Loop</h1>
+    <script type="text/javascript">
+        console.log("print numbers between -10 to 19");
+        var number = -10;
+        while(number <= 19) {
+            console.log(number);
+            number++;
+        }
+        console.log("print even numbers between 10 to 40");
+        var number = 10;
+        while(number <= 40) {
+            console.log(number);
+            number+=2;
+        }
+        console.log("print odd numbers between 300 to 333");
+        var number = 300;
+        while(number <= 333) {
+            if((number % 2) === 1) {
+                console.log(number);
+            }
+            number++;
+        }
+        console.log("print numbers divisable by 5 and 3 between 5 to 50");
+        var number = 5;
+        while(number <= 50) {
+            if (number % 5 === 0 && number % 3 === 0){
+                console.log(number);
+            }
+            number++;
+        }
+    </script>
+</body>
+</html>
