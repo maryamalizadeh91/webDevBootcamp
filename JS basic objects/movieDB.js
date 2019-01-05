@@ -1,0 +1,47 @@
+var movies = [
+  {
+    title: "In Bruges",
+    rating: 5,
+    hasWatched: true
+  },
+  {
+    title: "Frozen",
+    rating: 4.5,
+    hasWatched: false
+  },
+  {
+    title: "Mad Max Fury Road",
+    rating: 5,
+    hasWatched: true
+  },
+  {
+    title: "Less Miserables",
+    rating: 3.5,
+    hasWatched: false
+  }
+];
+
+// movies.forEach(function(movie) {
+//   if (movie.hasWatched) {
+//     console.log(
+//       'You have watched "' + movie.title + '" - ' + movie.rating + " stars"
+//     );
+//   } else {
+//     console.log(
+//       'You have not seen "' + movie.title + '" - ' + movie.rating + " stars"
+//     );
+//   }
+// });
+
+movies.forEach(function(movie) {
+    console.log(buildString(movie));
+  });
+
+  function buildString(movie) {
+    var result = "You have ";
+    result += movie.hasWatched ? "watched " : "not seen ";
+    result += "\"" + movie.title + "\" - ";
+    result += movie.rating + " stars";
+    return result;
+  }
+  
