@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Demo</title>
+    <style type="text/css">
+      .big {
+        font-size: 100px;
+        color: orange;
+        border: 5px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to MY DOM Demo</h1>
+    <p>Corgi mixes are <strong>super</strong> adorable</p>
+    <a href="http://google.com">link to google</a>
+    <ul>
+      <li>Orchids</li>
+      <li>Succulents</li>
+      <li>Tulips</li>
+    </ul>
+    <img src="https://barrelhorseworld.com/dogs/images/1145556d.jpg" />
+    <img
+      src="https://www.akc.org/wp-content/themes/akc/component-library/assets/img/welcome.jpg"
+    />
+
+    <script>
+      var p = document.querySelector("p");
+      p.classList.add("big");
+      p.classList.remove("big");
+      p.classList.toggle("big");
+      p.classList.toggle("big");
+    </script>
+    <script>
+      var p = document.getElementsByTagName("p")[0];
+      p.textContent = "Corgi mixes are really really adorable";
+      p.innerHTML = "Corgi mixes are <em> really really </em> adorable";
+      document.querySelector("h1").textContent = "End of this lesson";
+    </script>
+    <script>
+      var img1 = document.getElementsByTagName("img")[0];
+      img1.getAttribute("src");
+
+      img1.setAttribute(
+        "src",
+        "https://www.smartpettoysreview.com/wp-content/uploads/2018/04/dog-corgi-husky-mix.jpg"
+      );
+
+      var a = document.querySelector("a");
+      a.setAttribute("href", "http://bing.com");
+      a.setAttribute("target", "_blank");
+      a.textContent = "link to bing";
+
+    </script>
+  </body>
+</html>
