@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>jQuery Events</title>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1>jQuery Events</h1>
+
+    <input type="text" name="" id="">
+
+    <button>Don't Click ME</button> <button>Seriously Don't Click ME</button>
+    <button>This is your last warning!</button>
+
+    <script>
+    //   $("h1").click(function() {
+    //     alert("h1 clicked!");
+    //   });
+
+    //   $("button").click(function() {
+    //       alert("button clicked!");
+    //   });
+
+    //   $("button").click(function() {
+    //       $(this).css("backgroundColor", "green");
+    //       var text = $(this).text();
+    //       console.log("You clicked " + text);
+    //   });
+
+    //   $("input[type='text']").keypress(function(event) {
+    //       console.log(event);
+    //       if (event.which === 13) {
+    //           alert("you hit enter");
+    //       }
+    //   });
+
+    //   $("h1").on("click", function() {
+    //     $(this).css("color", "purple");
+    //   });
+
+    $("input").on("keypress", function() {
+        console.log("key pressed!");
+    });
+
+    $("button").on("mouseenter", function() {
+        $(this).css("fontWeight", "bold");
+    });
+
+    $("button").on("mouseleave", function() {
+        $(this).css("fontWeight", "normal");
+    });
+    </script>
+  </body>
+</html>
